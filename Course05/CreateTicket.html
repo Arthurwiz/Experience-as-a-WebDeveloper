@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Ticket</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="mystyle.css" rel="stylesheet" type="text/css" />
+<style>
+	H1{color: orange}
+</style>
+<script src="myjs.js"></script>
+</head>
+<body>
+<div class="container">  
+     <h1 id="pTitle" >Service Ticket Entry Form</h1>
+            <p>Please enter the customer information below:</p>
+     <form id="myForm" action="#">
+       <fieldset class="formSection">
+            <legend>Customer Information:</legend>
+            
+                       <div  class="form-group" >
+                            <label>First Name<br />
+                                <input type="text" name="FirstName" id="FirstName" class="form-control" />
+                            </label>
+                        </div>
+                        <div  class="form-group" >
+                            <label>Last Name<br />
+                                <input type="text" name="LastName" id="LastName" class="form-control" />
+                            </label>
+                        </div>
+ 
+                        <div class="form-group" >
+                            <label>Email<br />
+                                <input type="email" name="email" id="email" />
+                            </label>
+                        </div>
+                        <div class="form-group" >
+                            <label>Telephone number<br />
+                                <input type="tel" name="telephone" id="telephone" />
+                            </label>
+                        </div>
+ 
+                        <div class="form-group">
+                          <label for="product">Product</label><br />
+                                <select name="product"  id="product" required>
+                                    <option selected value="" disabled></option>
+                                    <option value="T1000">Grill Model T10000</option>
+                                    <option value="T2000">Grill Model T20000</option>
+                                    <option value="G2000">Gas Grill </option>
+                                   <option value="B3000">Blaze Grill </option>
+                                </select>
+                             
+                        </div>
+                        <div class="form-group">
+                            <label>Problem Description<br />
+                                <textarea type="text"  name="problem" id="txtproblem" rows="3" cols="50"></textarea>
+                            </label>
+                        </div>
+         <div>
+          <button type="submit" class="btn btn-success btn-lg"  onclick="validateuserinputs()" > Submit</button>
+         </div>
+    
+               </fieldset>                   
+         </form>
+     </div>  
+  
+</body>
+</html>
